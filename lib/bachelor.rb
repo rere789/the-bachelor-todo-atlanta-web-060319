@@ -55,7 +55,7 @@ def get_average_age_for_season(data, season)
         ages += key["age"].split(" , ")
     
       end
-      ages.to_i 
+      binding.pry 
         ages.inject(0) {|i, r| i + r}.to_f / arr.size
     end 
 end
