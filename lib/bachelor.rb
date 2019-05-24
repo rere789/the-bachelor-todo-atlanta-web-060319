@@ -56,6 +56,7 @@ def get_average_age_for_season(data, season)
         if key == "age"
           count += 1 
           ages = num.to_f
+          binding.pry 
         end 
       end 
     end 
