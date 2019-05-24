@@ -52,7 +52,7 @@ def get_average_age_for_season(data, season)
     ages = []
     data.each do |season, people|
       people.each do |key|
-        ages += key["age"] 
+        ages += key["age"].split.to_i 
       end
         ages.inject(0) {|i, r| i + r}.to_f / arr.size
     end 
